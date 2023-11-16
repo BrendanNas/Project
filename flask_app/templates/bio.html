@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>Bio</title>
+</head>
+<body>
+    <div class="bio">
+        <div class="bio-band">
+            <h2>Wanna learn more about the band?</h2>
+            <div id="options">
+                <a href="/dashboard" id="options">Back Home</a>
+                <a href="/music" id="options">Hear some tunes.</a>
+            </div>
+        </div>
+        <div class="history">
+            <div id="origins">
+                <h1>Birth of the Band.</h1>
+            </div>
+            <div id="birth">
+                <h3> Way back in 1964, a man by the name of Guy Patterson, who aspired to become a jazz drummer, was asked by Jimmy
+                    Mattingly II and Leonard Haise to perform at a talent show with their band. After they managed to win the talent show,
+                    the three young men, along with their newest bass player T.B. Player, decided to tour around the world to spread their 
+                    music. And that folks, is the birth of the the band known as The Oneders (not O'Neaters). 
+                </h3>
+            </div>
+            <div id="origins">
+                <h1>Meet the members.</h1>
+            </div>
+            <div id="members">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='download (1).jpg')}}" id="bandmate">
+                    <p>Guy "Skitch" Patterson is the Oneders drummer, and a damn good one at that. He was born in 1947 in Virginia
+                        but eventually made his way up to Erie Pennsylvania where he spent his days working at an appliance store. One day, two young men named James
+                        and Leonard came into the store looking for him to ask for his help. They had heard he was a drummer, and they needed a drummer to help them 
+                        in an upcoming talent show. Choosing that anything would be better then just staying in the store, he joined them and actually helped them win the
+                        talent show. After the show, Guy decided to stay with the band and went with them as they travelled around the country to perform at a variety of places.
+                    </p>
+                </div>
+                <div class="member-2">
+                    <img src="{{ url_for('static', filename='download.jpg')}}" id="bandmate">
+                    <p>James "Jimmy" Mattigly II is the Oneders lead singer as well as their rhythm guitarist. Born in 1945 in Texas to two musicians,
+                        he quickly discovered a love for music in all its forms. During his years at school, he met a young boy named Leonard and the two 
+                        became friends almost instantaneously due to their shared love of music. The two would spend time practicing music in Leonards garage where he would sing
+                        the songs that they wrote. In 1960, the two took part in a festival in their home town where James sang all the songs that the two wrote, winning 
+                        the hearts of the crowd with his phenomenal voice. Ever since, he's been the voice of The Oneders, and he will be for as long as he can.
+                    </p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='download(3).jpg')}}">
+                    <p>Leondard "Lenny" Haise is the Oneders lead guitarist as well as one of the original founders of the band. He was born in 1948 in Arizona
+                        but moved Texas at the age of ten after his parents divorce. It was there that he met James and soon after the two became close friends while attending the 
+                        same elementary school. In their early days, they would spend their free time practicing music in Leondard's garage (much to his fathers dismay) where Leonard 
+                        would play the guitar while James was the vocalist. In 1960, the two decided to take part in a event held in their home town where Leonards father 
+                        encouraged them to provide entertainment for the festival, leading the boys to spend the whole event playing music for the slowly congregating crowd.
+                        Soon, they decided to make their music official and created the band known as The Oneders (which was and is still misread as
+                        the O'Neaders).
+                    </p>
+                </div>
+                <div class="member-2">
+                    <img src="{{ url_for('static', filename='download(5).jpg')}}">
+                    <p>T.B. "Gramps" Player serves as the bass player for The Oneders. Born in 1937 in Michigan into a poor family, Player didn't have many luxuries in his youth, sometimes leading to nights where they
+                        didn't have lights,heating, or even food. Once he managed to save up enough money, he went and bought himself a bass guitar and soon found he have a gift for
+                        the guitar. After moving to Pennsylvania, he went around doing freelance work for people who had a job to give, and money to give for a job, it wasn't the most
+                        thrilling life, but he enjoyed it. One way or another, he heard about the band known as The Oneders and decided to give them a shot. He soon managed to join the band and now
+                        helps to set up tours across the country for their band, and was nicknamed "Gramps" due to him being older then all the other band members.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

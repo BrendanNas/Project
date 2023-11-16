@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="chat">
+        <div id="head">
+            <h2>Wanna say something?</h2>
+        </div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {%for message in messages %}
+                    <p class="red-text">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="comment">
+            <form action="/create/chats" method="post">
+                <input type="hidden" name="user_id" value="{{session['user_id']}}">
+                <div>
+                    <label for="comment">Comment Here:</label>
+                    <textarea name="comment" cols="40" rows="15"></textarea>
+                </div>
+                <a href="/dashboard" id="cancel">Cancel</a>
+                <input type="submit" id="submit" value="Post">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
